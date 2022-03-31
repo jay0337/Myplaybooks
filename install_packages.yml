@@ -1,0 +1,9 @@
+---
+- name: My Testing Playbook
+  hosts: all
+  become: true
+  tasks:
+  - name: install pakage
+    yum: 
+     name: tree
+     state: latest
